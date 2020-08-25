@@ -18,36 +18,45 @@ form.addEventListener("submit", function(event){
     statusAdress.innerText = "";
     statusUsername.innerText = "";
     statusPassword.innerText = "";
-    statusEmail.innerText = "";  
+    statusEmail.innerText = "";
     
     if (form.name.value == "") {
-        statusName.innerText = "Udfyld navn!";
+        statusName.innerText = "✖ Dette felt skal udfyldes";
         status = false;
     }
 
     if (form.lastname.value == "") {
-        statusLastName.innerText = "Udfyld efternavn!";
+        statusLastName.innerText = "✖ Dette felt skal udfyldes";
         status = false;
     }
 
     if (form.adress.value == "") {
-        statusAdress.innerText = "Udfyld adresse!";
+        statusAdress.innerText = "✖ Dette felt skal udfyldes";
         status = false;
     }
 
     
     if (form.username.value == "") {
-        statusUsername.innerText = "Udfyld brugernavn!";
+        statusUsername.innerText = "✖ Dette felt skal udfyldes";
         status = false;
     }
 
     if (form.password.value == "") {
-        statusPassword.innerText = "Udfyld password!";
+        statusPassword.innerText = "✖ Dette felt skal udfyldes";
         status = false;
     }
 
     if (form.email.value == "") {
-        statusEmail.innerText = "Udfyld e-mail!";
+        statusEmail.innerText = "✖ Dette felt skal udfyldes   ";
+        status = false;
+    }
+
+    if (form.by.value == "") {
+        statusAdress.innerText = "✖ Dette felt skal udfyldes   ";
+        status = false;
+    }
+    if (form.postnr.value == "") {
+        statusAdress.innerText = "✖ Dette felt skal udfyldes   ";
         status = false;
     }
 
