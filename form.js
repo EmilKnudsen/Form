@@ -52,7 +52,7 @@ form.addEventListener("submit", function(event){
     }
 
     if (form.by.value == "") {
-        statusAdress.innerText = "✖ Dette felt skal udfyldes   ";
+        statusAdress.innerText = "✖ Dette felt skal udfyldes  ";
         status = false;
     }
     if (form.postnr.value == "") {
